@@ -1,0 +1,52 @@
+{
+    "brinquedos": [
+        {
+            "id": 1,
+            "nome": "Lançador de Dardos Hasbro Accustrike Raptorstrike",
+            "avaliacao": "4 - ★★★★☆",
+            "precoDolar": 50,
+            "cores": "Laranja Azul Verde Vermelho Branca Preto",
+            "img": "https://vilabrasil.com.br/wp-content/uploads/2024/10/lancador_de_dardos_hasbro_c1895_accustrike_raptorstrike.jpg"
+        },
+        {
+            "id": 2,
+            "nome": "Nerf Elite 2.0 Eaglepoint Rd 8 - Lançador Elite com Mira Removível",
+            "avaliacao": "5 - ★★★★★",
+            "precoDolar": 70,
+            "cores": "Laranja Azul Verde Vermelho Branca Preto",
+            "img": "https://m.media-amazon.com/images/I/61gqaddahDL._AC_SX679_.jpg"
+        },
+        {
+            "id": 3,
+            "nome": "Nerf Elite Lancador Shockwave 2.0 - Hasbro",
+            "avaliacao": "4 - ★★★★☆",
+            "precoDolar": 62,
+            "cores": "Laranja Azul Verde Vermelho Branca Preto",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_721261-MLU72490821186_102023-O.webp"
+        },
+        {
+            "id": 4,
+            "nome": "Nerf Ultra Ataque",
+            "avaliacao": "3 - ★★★☆☆",
+            "precoDolar": 45,
+            "cores": "Laranja Azul Verde Vermelho Branca Preto",
+            "img": "https://www.tradeinn.com/f/13908/139088036/nerf-ultra-ataque.webp"
+        },
+        {
+            "id": 5,
+            "nome": "Brinquedo Lançador Nerf Fortnite Six Shooter Da Hasbro F2684",
+            "avaliacao": "3,5 - ★★★☆☆",
+            "precoDolar": 38,
+            "cores": "Laranja Azul Verde Vermelho Branca Preto",
+            "img": "https://imgs.extra.com.br/1521504865/1xg.jpg?imwidth=500"
+        },
+        {
+            "id": 6,
+            "nome": "Hasbro Lançador de Dardos Ultra One",
+            "avaliacao": "4 - ★★★★☆",
+            "precoDolar": 55,
+            "cores": "Laranja Azul Verde Vermelho Branca Preto",
+            "img": "https://images.rappi.com.br/products/5e9db028-cc65-4080-b56b-a6c409294405.jpg?d=900x750&e=webp&q=30"
+        }
+    ]
+}

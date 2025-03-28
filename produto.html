@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="CSS/produto.css">
+</head>
+<body>
+    <header class="row">
+        <div class="col-md-4">
+            <a href="index.html"><img id="imgLogo" src="img/ui/logo.png" alt="Logo"></a>
+          </div>
+          <div class="col-md-4">
+            <input type="text" id="pesquisa" placeholder="Pesquisar">
+          </div>
+          <div class="col-md-4">
+            <div>
+                <img id="menuBurger" class="iconesNav" src="img/ui/menu.png" alt="Menu">
+                <img class="iconesNav" src="img/ui/ajuda.png" alt="Ajuda">
+                <img class="iconesNav" src="img/ui/usuario.png" alt="Usuário">
+                <img class="iconesNav" src="img/ui/carrinhos.png" alt="Carrinho">
+            </div>
+            </div>
+
+    </header>
+    
+    <div id="divProduto">
+        <div id="imagem">
+            <img src="" alt="" id="imgProduto">
+        </div>
+        <div style="display: flex;gap:20px">
+
+            <div id="descricao">
+                <h1 id="produto">Texto</h1>
+                <br>
+                <p id="avaliacao">avaliacao</p>
+                <p id="preco">preco</p>
+                <p id="corFrete">corFrete</p>
+                <p>R$<span id="frete"></span></p>
+                <p id="totalCompra">Total a pagar: <span id="total"></span></p>
+                <div>
+                    <button onclick="window.location.href='index.html'" style="margin-bottom: 10px;">Voltar para a Página Inicial</button>
+                    <button id="btnCarrinho" onclick="alert('Item adicionado ao carrinho')">Carrinho</button>
+                </div>
+                <div>
+                    <button id="btnComprar" onclick="alert('Compra feita com sucesso!'); window.location.href='index.html'">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <footer class="container">
+        <div id="footerCont" class="row d-flex justify-content-around">
+            <div id="termosPC" class="col-md-4">
+                <div>
+                    Política de Privacidade
+                </div>
+                <div>
+                    Reembolso
+                </div>
+                <div>
+                  Direitos autorais
+                </div>
+            </div>
+            <div class="col-md-4">
+                Contato
+                <br>
+                <img src="img/Contato/whatsappLogo.png" alt="Contato Whatsapp">
+                <img src="img/Contato/instagramLogo.png" alt="Contato Instagram">
+                <img src="img/Contato/twitterXLogo.png" alt="Contato Twitter/X">
+            </div>
+            <div class="col-md-4">
+                Pagamento
+                <br>
+                <img src="img/pagamentos/mastercardLogo.png" alt="Pagamento MasterCard">
+                <img src="img/pagamentos/paypalLogo.png" alt="Pagamento PayPal">
+                <img src="img/pagamentos/pixLogo.png" alt="Pagamento Pix">
+            </div>
+            <div id="termosMobile" class="col-md-4">
+              <div>
+                  Política de Privacidade
+              </div>
+              <div>
+                  Reembolso
+              </div>
+              <div>
+                Direitos autorais
+              </div>
+          </div>
+        </div>
+    </footer>
+    <script src="produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 150px 4fr 0fr;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    background-color: #ffe5b49c;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(255, 106, 0), #F79220);
+    justify-content: space-around;
+}
+
+header.row {
+    margin: 0;
+    background-color: #F79220;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    filter: drop-shadow(0px 15px 15px #f79320b0);
+}
+
+.col-md-4 {
+    text-align: center;
+    padding: 10px;
+}
+
+#imgLogo {
+    width: 150px;
+}
+
+.iconesNav {
+    width: 35px;
+}
+
+#pesquisa {
+    padding: 5px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    border: 0px;
+}
+
+#pesquisa::placeholder {
+    color: lightgray;
+}
+
+#menuBurger {
+    display: none;
+}
+
+
+#divProduto {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-color: #ffffff;
+    margin: 50px auto;
+    max-width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imagem,
+#imgProduto {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#descricao {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
+}
+    button:hover{
+        scale: 1.03;
+    }
+    button:active{
+        border: 3px solid #F79220;
+    }
+#btnCarrinho{
+    width: 78px;
+}
+#btnComprar{
+    font-size: 1.3em;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#totalCompra {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    grid-area: footer;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgb(255, 106, 0), #F79220);
+    min-width: 100vw;
+    flex-direction: column;
+    color: white;
+}
+
+footer img {
+    width: auto;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#termosMobile {
+    display: none;
+}
+
+#termosPC div {
+    margin-bottom: 8.5px;
+}
+
+#footerCont {
+    display: flex;
+    justify-content: space-around;
+    min-height: 94px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        display: grid;
+    }
+
+    header {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: linear-gradient(180deg, rgb(255, 106, 0), #F79220);
+        width: 100%;
+    }
+
+    header.row {
+        display: flex;
+        justify-content: space-around;
+        background-color: #F79220;
+        height: 100px;
+        width: 100vw;
+        filter: drop-shadow(0px 15px 15px #f79320b0);
+    }
+
+
+    .iconesNav {
+        display: none;
+    }
+
+    #menuBurger {
+        display: block;
+        width: 30px;
+        /* position: absolute; */
+        bottom: 30px;
+        margin-left: 130px;
+    }
+
+    #pesquisa {
+        display: none;
+    }
+
+    .col-md-4 {
+        max-width: 180px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #imgLogo {
+        width: 120px;
+    }
+
+    .iconesNav {
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    #pesquisa {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #divProduto {
+        width: 340px;
+        height: 650px;
+        min-height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    #imagem,
+    #imgProduto {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    #imagem {
+        width: 200px;
+        height: auto;
+    }
+
+    #avaliacao {
+        margin-top: -15px;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    #termosPC {
+        display: none;
+    }
+
+    #termosMobile {
+        display: block;
+    }
+    #termosMobile div {
+        margin-bottom: 8.5px;
+    }
+}

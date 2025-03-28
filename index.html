@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <header class="row">
+        <div class="col-md-4">
+            <img id="imgLogo" src="img/ui/logo.png" alt="Logo">
+          </div>
+          <div class="col-md-4">
+            <input type="text" id="pesquisa" placeholder="Pesquisar">
+          </div>
+          <div class="col-md-4">
+            <div>
+              <img id="menuBurger" class="iconesNav" src="img/ui/menu.png" alt="Menu">
+                <img class="iconesNav" src="img/ui/ajuda.png" alt="Ajuda">
+                <img class="iconesNav" src="img/ui/usuario.png" alt="Usuário">
+                <img class="iconesNav" src="img/ui/carrinhos.png" alt="Carrinho">
+            </div>
+        </div>
+
+    </header>
+    <main class="container">
+
+        <div class="row">
+            <div class="col-md-9 bannerGrande">
+                <img class="banners" src="img/banners/bannerGrande1.jpg" alt="">
+            </div>
+            <div id="bannersPequeno" class="col-md-3 row">
+                <div class="bannerPequeno col-md-12 col-sm-6">
+                    <img class="banners" src="img/banners/bannerPequeno1.jpg" alt="">
+                </div>
+                <div class="bannerPequeno col-md-12 col-sm-6">
+                    <img class="banners" src="img/banners/bannerPequeno2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="links">
+            <a href="">Novidades</a>
+            <a href="">Promoções</a>
+            <a href="">Acessórios</a>
+            <a href="">Personalizados</a>
+        </div>
+        <div id="calculoFrete">
+            <label for="">Insira seu CEP para calcular o frete!</label>
+            <input type="number" min="1" id="inputCEP">
+            <button onclick="pegarCep()">Calcular</button>
+            <p id="frete">R$--.--</p>
+            <table>
+              <tr>
+                <th>Região</th>
+                <th>Preços</th>
+              </tr>
+              <tr>
+                <td>Sul</td>
+                <td>R$18,00</td>
+              </tr>
+              <tr>
+                <td>Sudeste</td>
+                <td>R$12,00</td>
+              </tr>
+              <tr>
+                <td>Norte</td>
+                <td>R$30,00</td>
+              </tr>
+              <tr>
+                <td>Nordeste</td>
+                <td>R$26,00</td>
+              </tr>
+              <tr>
+                <td>Centro-Oeste</td>
+                <td>R$20,00</td>
+              </tr>
+            </table>
+        </div>
+        <!-- SEÇÃO DE PRODUTOS -->
+        
+        <p id="erro"></p><br>
+        <div id="produtos">
+            <div class="card" style="width: 18rem;">
+                <img src="https://vilabrasil.com.br/wp-content/uploads/2024/10/lancador_de_dardos_hasbro_c1895_accustrike_raptorstrike.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lançador de Dardos Hasbro Accustrike Raptorstrike</h5>
+                  <p class="card-text">$50 R$<span class=precoReal>--,--</span></p>
+                  <button class="btn btn-primary" onclick="comprar(1)">Comprar</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/61gqaddahDL._AC_SX679_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nerf Elite 2.0 Eaglepoint Rd 8 - Lançador Elite com Mira Removível</h5>
+                  <p class="card-text">$70 R$<span class=precoReal>--,--</span></p>
+                  <button class="btn btn-primary" onclick="comprar(2)">Comprar</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_721261-MLU72490821186_102023-O.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nerf Elite Lancador Shockwave 2.0 - Hasbro</h5>
+                  <p class="card-text">$62 R$<span class=precoReal>--,--</span></p>
+                  <button class="btn btn-primary" onclick="comprar(3)">Comprar</button>
+                </div>
+              </div>
+
+              <!--  -->
+
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.tradeinn.com/f/13908/139088036/nerf-ultra-ataque.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nerf Ultra Ataque</h5>
+                  <p class="card-text">$45 R$<span class=precoReal>--,--</span></p>
+                  <button class="btn btn-primary" onclick="comprar(4)">Comprar</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://imgs.extra.com.br/1521504865/1xg.jpg?imwidth=500" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Brinquedo Lançador Nerf Fortnite Six Shooter Da Hasbro F2684</h5>
+                  <p class="card-text">$38 R$<span class=precoReal>--,--</span></p>
+                  <button class="btn btn-primary" onclick="comprar(5)">Comprar</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://images.rappi.com.br/products/5e9db028-cc65-4080-b56b-a6c409294405.jpg?d=900x750&e=webp&q=30" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hasbro Lançador de Dardos Ultra One</h5>
+                  <p class="card-text">$55 R$<span class=precoReal>--,--</span></p>
+                  <button class="btn btn-primary" onclick="comprar(6)">Comprar</button>
+                </div>
+              </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row d-flex justify-content-around">
+            <div id="termosPC" class="col-md-4">
+                <div>
+                    Política de Privacidade
+                </div>
+                <div>
+                    Reembolso
+                </div>
+                <div>
+                  Direitos autorais
+                </div>
+            </div>
+            <div class="col-md-4">
+                Contato
+                <br>
+                <img src="img/Contato/whatsappLogo.png" alt="Contato Whatsapp">
+                <img src="img/Contato/instagramLogo.png" alt="Contato Instagram">
+                <img src="img/Contato/twitterXLogo.png" alt="Contato Twitter/X">
+            </div>
+            <div class="col-md-4">
+                Pagamento
+                <br>
+                <img src="img/pagamentos/mastercardLogo.png" alt="Pagamento MasterCard">
+                <img src="img/pagamentos/paypalLogo.png" alt="Pagamento PayPal">
+                <img src="img/pagamentos/pixLogo.png" alt="Pagamento Pix">
+            </div>
+            <div id="termosMobile" class="col-md-4">
+              <div>
+                  Política de Privacidade
+              </div>
+              <div>
+                  Reembolso
+              </div>
+              <div>
+                Direitos autorais
+              </div>
+          </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
